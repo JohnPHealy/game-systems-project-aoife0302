@@ -5,8 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
 
-    public SignalGame contextOn;
-    public SignalGame contextOff;
+    public SignalGame context;
     public bool playerInRange;
 
     // Use this for initialization
@@ -23,18 +22,18 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            contextOn.Raise();
+            context.Raise();
             playerInRange = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            contextOff.Raise();
+            context.Raise();
             playerInRange = false;
         }
     }

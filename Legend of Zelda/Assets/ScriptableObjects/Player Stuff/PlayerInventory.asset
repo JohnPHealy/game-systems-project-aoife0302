@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentItem: {fileID: 11400000, guid: 83baa93391c59894f8bf66fd4f815ed7, type: 2}
   items: []
-  numberOfKeys: 1
+  numberOfKeys: 4
+  coins: 0

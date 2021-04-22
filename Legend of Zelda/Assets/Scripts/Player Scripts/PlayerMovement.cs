@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startingPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public SignalGame playerHit;
 
     // Use this for initialization
     void Start()
@@ -39,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Is the player in an interaction
+        if (currentState == PlayerState.interact)
+        {
+            return;
+        }
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
@@ -111,22 +117,29 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + change.normalized * speed * Time.deltaTime);
     }
 
-    public void Knock(float knockTime, float damage)
+    // TODO KNOCKBACK move the knockback to its own script
+    public void Knock(float knockTime)
     {
+        StartCoroutine(KnockCo(knockTime));
+        /*
+        // TODO HEALTH
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
         if (currentHealth.RuntimeValue > 0)
         {
-            StartCoroutine(KnockCo(knockTime));
-        }
-        else
-        {
+            // TODO HEALTH
+            playerHit.Raise();
+        }else{
             this.gameObject.SetActive(false);
         }
+        */
+
     }
+
 
     private IEnumerator KnockCo(float knockTime)
     {
+        playerHit.Raise();
         if (myRigidbody != null)
         {
             yield return new WaitForSeconds(knockTime);

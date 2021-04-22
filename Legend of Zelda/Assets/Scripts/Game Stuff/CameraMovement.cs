@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("Position Variables")]
     public Transform target;
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosition;
 
+    [Header("Animator")]
+    public Animator anim;
+
+    [Header("Position Reset")]
+    public VectorValue camMin;
+    public VectorValue camMax;
+
 
     // Use this for initialization
     void Start()
     {
+        maxPosition = camMax.initialValue;
+        minPosition = camMin.initialValue;
+        anim = GetComponent<Animator>();
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
@@ -34,5 +45,32 @@ public class CameraMovement : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position,
                                               targetPosition, smoothing);
         }
+    }
+
+    private Vector3 RoundPosition(Vector3 position)
+    {
+        float xOffset = position.x % .0625f;
+        if (xOffset != 0)
+        {
+            position.x -= xOffset;
+        }
+        float yOffset = position.y % .0625f;
+        if (yOffset != 0)
+        {
+            position.y -= yOffset;
+        }
+        return position;
+    }
+    public void BeginKick()
+    {
+        Debug.Log("Kick");
+        anim.SetBool("kick_active", true);
+        StartCoroutine(KickCo());
+    }
+
+    public IEnumerator KickCo()
+    {
+        yield return null;
+        anim.SetBool("kick_active", false);
     }
 }

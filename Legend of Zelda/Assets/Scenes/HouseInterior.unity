@@ -6438,6 +6438,14 @@ PrefabInstance:
       value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b062355876121b47ac910b64e4f64f4, type: 2}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: 14bb8460e763183439a92319815e4aac, type: 2}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
       propertyPath: fadeInPanel
       value: 
       objectReference: {fileID: 1762836966912852117, guid: 641027a6fb9a20b48b895a8b746cb2fa, type: 3}
@@ -6453,6 +6461,22 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 7181bb8c1d4386344abdbcc2f441f94d, type: 2}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraNewMax.x
+      value: -6.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraNewMax.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraNewMin.x
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
+      propertyPath: cameraNewMin.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8967094146867431992, guid: 85615709960554d4e83e7ee1bb046b00, type: 3}
       propertyPath: playerPosition.x
       value: -14.49

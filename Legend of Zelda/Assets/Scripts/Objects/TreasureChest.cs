@@ -5,18 +5,29 @@ using UnityEngine.UI;
 
 public class TreasureChest : Interactable
 {
+    [Header("Contents")]
     public Item contents;
     public Inventory playerInventory;
     public bool isOpen;
+    public BoolValue storedOpen;
+
+    [Header("Signals and Dialog")]
     public SignalGame raiseItem;
     public GameObject dialogBox;
     public Text dialogText;
+
+    [Header("Animation")]
     private Animator anim;
 
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
+        isOpen = storedOpen.RuntimeValue;
+        if (isOpen)
+        {
+            anim.SetBool("opened", true);
+        }
     }
 
     // Update is called once per frame
@@ -49,10 +60,11 @@ public class TreasureChest : Interactable
         // Raise the signal to the player to animate
         raiseItem.Raise();
         // raise the context clue
-        contextOn.Raise();
+        context.Raise();
         // set the chest to opened
         isOpen = true;
         anim.SetBool("opened", true);
+        storedOpen.RuntimeValue = isOpen;
     } 
 
     public void ChestAlreadyOpen()
@@ -69,7 +81,7 @@ public class TreasureChest : Interactable
     {
         if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
         {
-            contextOn.Raise();
+            context.Raise();
             playerInRange = true;
         }
     }
@@ -78,7 +90,7 @@ public class TreasureChest : Interactable
     {
         if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
         {
-            contextOff.Raise();
+            context.Raise();
             playerInRange = false;
         }
     }
