@@ -7,7 +7,7 @@ public class Room : MonoBehaviour
     public Enemy[] enemies;
     public pot[] pots;
     //public ResetToPosition[] objectsToReset;
-    //public GameObject virtualCamera;
+    public GameObject virtualCamera;
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,11 +22,11 @@ public class Room : MonoBehaviour
             {
                 ChangeActivation(pots[i], true);
             }
-            //virtualCamera.SetActive(true);
-           // for (int i = 0; i < objectsToReset.Length; i++)
-           // {
-            //    objectsToReset[i].ResetPosition();
-           // }
+            virtualCamera.SetActive(true);
+            /*for (int i = 0; i < objectsToReset.Length; i++)
+            {
+                objectsToReset[i].ResetPosition();
+            }*/
         }
     }
 
@@ -43,18 +43,18 @@ public class Room : MonoBehaviour
             {
                 ChangeActivation(pots[i], false);
             }
-           /* virtualCamera.SetActive(false);
-            for (int i = 0; i < objectsToReset.Length; i++)
+            virtualCamera.SetActive(false);
+            /*for (int i = 0; i < objectsToReset.Length; i++)
             {
                 objectsToReset[i].ResetPosition();
             }*/
         }
     }
 
-    /*public void OnDisable()
+    public void OnDisable()
     {
         virtualCamera.SetActive(false);
-    }*/
+    }
 
     public void ChangeActivation(Component component, bool activation)
     {

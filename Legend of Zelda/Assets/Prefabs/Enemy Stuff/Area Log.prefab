@@ -126,7 +126,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &76346724685729698
 BoxCollider2D:
@@ -200,12 +200,13 @@ MonoBehaviour:
   moveSpeed: 1
   homePosition: {x: 0, y: 0}
   deathEffect: {fileID: 1659389572498653479, guid: 1502afb7169a5a24b8124aa64c25dbc9, type: 3}
+  thisLoot: {fileID: 0}
   roomSignal: {fileID: 0}
   myRigidbody: {fileID: 76346724685729709}
   target: {fileID: 0}
   chaseRadius: 6
   attackRadius: 1
-  anim: {fileID: 0}
+  anim: {fileID: 76346724685729697}
   boundary: {fileID: 0}
 --- !u!114 &76346724685729710
 MonoBehaviour:

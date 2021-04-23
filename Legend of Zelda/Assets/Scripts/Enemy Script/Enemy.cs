@@ -25,20 +25,20 @@ public class Enemy : MonoBehaviour
     [Header("Death Effects")]
     public GameObject deathEffect;
     private float deathEffectDelay = 1f;
-    //public LootTable thisLoot;
+    public LootTable thisLoot;
 
     [Header("Death Signals")]
     public SignalGame roomSignal;
 
     private void Awake()
     {
-        health = maxHealth.RuntimeValue;
+        health = maxHealth.intialValue;
     }
 
     private void OnEnable()
     {
         transform.position = homePosition;
-        health = maxHealth.RuntimeValue;
+        health = maxHealth.intialValue;
         currentState = EnemyState.idle;
     }
 
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             DeathEffect();
-            //MakeLoot();
+            MakeLoot();
             if (roomSignal != null)
             {
                 roomSignal.Raise();
@@ -57,17 +57,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    /*private void MakeLoot()
+    private void MakeLoot()
     {
         if (thisLoot != null)
         {
-            Powerup current = thisLoot.LootPowerup();
+            PowerUp current = thisLoot.LootPowerup();
             if (current != null)
             {
                 Instantiate(current.gameObject, transform.position, Quaternion.identity);
             }
         }
-    }*/
+    }
 
     private void DeathEffect()
     {
