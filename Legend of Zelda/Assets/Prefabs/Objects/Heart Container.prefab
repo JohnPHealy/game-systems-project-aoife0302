@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5947807723337035693
+--- !u!1 &5549535495187807430
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5947807723337035665}
-  - component: {fileID: 5947807723337035664}
-  - component: {fileID: 5947807723337035667}
-  - component: {fileID: 5947807723337035666}
+  - component: {fileID: 88018916839504052}
+  - component: {fileID: 6711228224488666349}
+  - component: {fileID: 3709340782872330252}
+  - component: {fileID: 4007182200706274468}
+  - component: {fileID: 7737825388214193666}
   m_Layer: 0
-  m_Name: magic bottle
+  m_Name: Heart Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5947807723337035665
+--- !u!4 &88018916839504052
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5947807723337035693}
+  m_GameObject: {fileID: 5549535495187807430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.74, y: -2.2, z: 0}
+  m_LocalPosition: {x: -13.531613, y: 37.84968, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5947807723337035664
+--- !u!212 &6711228224488666349
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5947807723337035693}
+  m_GameObject: {fileID: 5549535495187807430}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,45 +74,64 @@ SpriteRenderer:
   m_SortingLayerID: 23680655
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46b822ee53942f642ba8fb876c806d0b, type: 3}
+  m_Sprite: {fileID: -3555468057966329373, guid: 4cb52525c29947e4b831549791a40b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5947807723337035667
+--- !u!58 &3709340782872330252
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5947807723337035693}
+  m_GameObject: {fileID: 5549535495187807430}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.08606148}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &5947807723337035666
+  m_Radius: 0.40561104
+--- !u!95 &4007182200706274468
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5549535495187807430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0824c0b20ea4f54491aef795226c3ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7737825388214193666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5947807723337035693}
+  m_GameObject: {fileID: 5549535495187807430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61ad5aeeef781e5429d5c04de11c3078, type: 3}
+  m_Script: {fileID: 11500000, guid: ec2454eb84154b54ba5a8fb2c604f13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupSignal: {fileID: 11400000, guid: 90739bfcabc50524eb371cbc9da7afbd, type: 2}
-  playerInventory: {fileID: 11400000, guid: 71b07aaff4f962d46b69bb789a05b0e7, type: 2}
-  magicValue: 2
+  powerupSignal: {fileID: 11400000, guid: b1532d3d2db707e4ea93cd23f8b2d442, type: 2}
+  heartContainers: {fileID: 11400000, guid: 5e28570008e5f824c8d890c038b9fdd1, type: 2}
+  playerHealth: {fileID: 11400000, guid: 8ff6786d39e5ce240b107e2e5c510c7a, type: 2}

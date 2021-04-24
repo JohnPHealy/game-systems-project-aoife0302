@@ -7,6 +7,4 @@ public class PowerUp : MonoBehaviour
 
     public SignalGame powerupSignal;
 
-
-
 }

@@ -83,10 +83,10 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetButtonDown("Second Weapon") && currentState != PlayerState.attack
            && currentState != PlayerState.stagger)
         {
-            //if (playerInventory.CheckForItem(bow))
-            //{
+            if (playerInventory.CheckForItem(bow))
+            {
                 StartCoroutine(SecondAttackCo());
-            //} 
+            } 
         }
     }
 
