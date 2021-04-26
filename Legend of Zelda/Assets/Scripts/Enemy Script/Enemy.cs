@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
         currentState = EnemyState.idle;
     }
 
-    private void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)

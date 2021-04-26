@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class playerHit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	[SerializeField] private float damage;
+	// Use this for initialization
+	void Start()
+	{
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("breakable"))
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+
+	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.CompareTag("breakable"))
+		{
+			other.GetComponent<pot>().Smash();
+		}
+
+        if (other.CompareTag("enemy"))
         {
-            other.GetComponent<pot>().Smash();
+			other.GetComponent<Enemy>().TakeDamage(damage);
         }
-    }
+	}
 }
+
+

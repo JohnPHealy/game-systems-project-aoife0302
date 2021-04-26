@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1829467241013582791}
   - component: {fileID: 6912988167868075596}
   - component: {fileID: -4173535645658069645}
+  - component: {fileID: 6624435212707985771}
   m_Layer: 10
   m_Name: arrow
   m_TagString: breakable
@@ -164,3 +165,16 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.3
   otherTag: breakable
+--- !u!114 &6624435212707985771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496098434529500275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63af55d576168043bf533dfdcb9fc01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

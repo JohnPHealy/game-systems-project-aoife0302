@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8254466193284870127}
   - component: {fileID: 6402264442382466308}
   - component: {fileID: 1673154035346385832}
+  - component: {fileID: 8796861471652628046}
   m_Layer: 9
   m_Name: Rock Projectile
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.3
-  damage: 2
+  otherTag: Player
 --- !u!114 &1673154035346385832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,3 +155,17 @@ MonoBehaviour:
   directionToMove: {x: 0, y: 0}
   lifetime: 2
   myRigidbody: {fileID: 8254466193284870127}
+--- !u!114 &8796861471652628046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254466193284870126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6055e4fdff53594aade3f1561c03f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  otherTag: Player
