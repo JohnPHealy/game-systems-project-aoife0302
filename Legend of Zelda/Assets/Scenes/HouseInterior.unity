@@ -123,6 +123,60 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &283707679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283707681}
+  - component: {fileID: 283707680}
+  m_Layer: 0
+  m_Name: TimelineManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &283707680
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283707679}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 536ef8729d126a842940ac4dae5326a4, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -3714998811096973200, guid: 536ef8729d126a842940ac4dae5326a4, type: 2}
+    value: {fileID: 1679427354}
+  - key: {fileID: 406605544374265567, guid: 536ef8729d126a842940ac4dae5326a4, type: 2}
+    value: {fileID: 1679427354}
+  - key: {fileID: -8533159155185255587, guid: 536ef8729d126a842940ac4dae5326a4, type: 2}
+    value: {fileID: 1795939297}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &283707681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283707679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1560123, y: -1.262764, z: -15.690353}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288608787
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,11 +237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4832073254968437228, guid: fa646b7751d74644ebe9de471f7d66da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4832073254968437228, guid: fa646b7751d74644ebe9de471f7d66da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4832073254968437228, guid: fa646b7751d74644ebe9de471f7d66da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3096,13 +3150,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8119591564453547028, guid: 827e9dc5a4a9ceb47933e1d0e032f3b4, type: 3}
+      propertyPath: m_Text
+      value: I wonder where dad went?
+      objectReference: {fileID: 0}
     - target: {fileID: 8119591565661086515, guid: 827e9dc5a4a9ceb47933e1d0e032f3b4, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8119591565661086515, guid: 827e9dc5a4a9ceb47933e1d0e032f3b4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119591565661086527, guid: 827e9dc5a4a9ceb47933e1d0e032f3b4, type: 3}
       propertyPath: m_Pivot.x
@@ -3971,6 +4029,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1679427354 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4832073254968437225, guid: fa646b7751d74644ebe9de471f7d66da, type: 3}
+  m_PrefabInstance: {fileID: 790779321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1758299038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,6 +6441,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1795939297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8119591564824070630, guid: 827e9dc5a4a9ceb47933e1d0e032f3b4, type: 3}
+  m_PrefabInstance: {fileID: 808000001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2763521869905551251
 PrefabInstance:
   m_ObjectHideFlags: 0

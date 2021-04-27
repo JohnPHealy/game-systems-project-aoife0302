@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: cc57d02b0c393bd4ca698a32c2a176bd, type: 3}
-    totalSpriteSurfaceArea: 700294
+    totalSpriteSurfaceArea: 903471
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -129,6 +129,8 @@ SpriteAtlas:
   - {fileID: -2431439944167368855, guid: aba2d6f1015621b49937b5e5d9538078, type: 3}
   - {fileID: 7274838496166343488, guid: aba2d6f1015621b49937b5e5d9538078, type: 3}
   - {fileID: -8506932439865520012, guid: aba2d6f1015621b49937b5e5d9538078, type: 3}
+  - {fileID: 7482667652216324306, guid: d0030c2247b9fb24dbdf80d002c44282, type: 3}
+  - {fileID: 21300000, guid: 80047f93f2b4d404fb33d7ecd0bad357, type: 3}
   - {fileID: 21300000, guid: 7bb31eb3a8aef6744ada799f4583b8f3, type: 3}
   - {fileID: 21300000, guid: 8577d8e46acd4ec49ab2fcdb0c1007d0, type: 3}
   - {fileID: -1986772863260763996, guid: 4cb52525c29947e4b831549791a40b82, type: 3}
@@ -544,7 +546,22 @@ SpriteAtlas:
   - {fileID: 536419509007563539, guid: a6c529b874f990747a250855260415e6, type: 3}
   - {fileID: 1036803682579554421, guid: a6c529b874f990747a250855260415e6, type: 3}
   - {fileID: 5559694988392259305, guid: a6c529b874f990747a250855260415e6, type: 3}
-  - {fileID: 21300000, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -1790513009360131488, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 6796940128468367395, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 7257679221847934946, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -8018767669905319889, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 3471414262902695032, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -5174125284999604879, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 4411923371137299535, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -7544729849536096197, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 109808345321430783, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -984706229473049029, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -2757298984738394219, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -3297999012176952179, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -6431366237039918707, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -8922353081226294202, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: 8869442856293547957, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
+  - {fileID: -1466947835845212873, guid: d8015bb854f89ab4587a880a8d5dc73a, type: 3}
   - {fileID: -5184852434559028963, guid: e516ebd83445c3547b9bbe01d6a9e1b9, type: 3}
   - {fileID: -1574146719278924981, guid: e516ebd83445c3547b9bbe01d6a9e1b9, type: 3}
   - {fileID: -2510889812312948490, guid: e516ebd83445c3547b9bbe01d6a9e1b9, type: 3}
@@ -1936,6 +1953,8 @@ SpriteAtlas:
   - character_73
   - character_70
   - character_71
+  - Square
+  - sword
   - orge attack sprites
   - bow
   - objects_71
@@ -2351,7 +2370,22 @@ SpriteAtlas:
   - Inner_38
   - Inner_42
   - Inner_43
-  - NPC_test
+  - NPC_test_11
+  - NPC_test_10
+  - NPC_test_13
+  - NPC_test_12
+  - NPC_test_6
+  - NPC_test_7
+  - NPC_test_4
+  - NPC_test_5
+  - NPC_test_2
+  - NPC_test_3
+  - NPC_test_0
+  - NPC_test_1
+  - NPC_test_8
+  - NPC_test_9
+  - NPC_test_15
+  - NPC_test_14
   - Tiny_Knight_Sheet_8
   - Tiny_Knight_Sheet_9
   - Tiny_Knight_Sheet_6

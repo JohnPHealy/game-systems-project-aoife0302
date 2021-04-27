@@ -9,14 +9,14 @@ public class Sign : Interactable
     public Text dialogText;
     public string dialog;
 
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (Input.GetButtonDown("attack") && playerInRange)
         {
