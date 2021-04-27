@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("HouseInterior");
     }
 
     public void QuitToDesktop()

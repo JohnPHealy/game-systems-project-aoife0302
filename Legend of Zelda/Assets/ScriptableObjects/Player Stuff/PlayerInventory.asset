@@ -15,6 +15,7 @@ MonoBehaviour:
   currentItem: {fileID: 0}
   items:
   - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 866ba1e04748d9d43960e727e17273fc, type: 2}
   numberOfKeys: 7
   coins: 0
