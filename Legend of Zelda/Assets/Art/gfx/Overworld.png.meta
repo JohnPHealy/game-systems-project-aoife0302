@@ -2698,7 +2698,7 @@ TextureImporter:
     second: Overworld_897
   - first:
       213: 8956595401287414416
-    second: Overworld_898
+    second: DoorOpen
   - first:
       213: -5910221638116152064
     second: Overworld_899
@@ -3073,7 +3073,7 @@ TextureImporter:
     second: Overworld_1022
   - first:
       213: 79073941841233497
-    second: Overworld_1023
+    second: DoorClose
   - first:
       213: 5952167292561707929
     second: Overworld_1024
@@ -21664,13 +21664,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_898
+      name: DoorOpen
       rect:
         serializedVersion: 2
         x: 112
-        y: 128
-        width: 16
-        height: 16
+        y: 112
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -21680,27 +21680,6 @@ TextureImporter:
       bones: []
       spriteID: 09232aa30183c4c70800000000000000
       internalID: 8956595401287414416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_899
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00d624cdbbcaafda0800000000000000
-      internalID: -5910221638116152064
       vertices: []
       indices: 
       edges: []
@@ -22247,48 +22226,6 @@ TextureImporter:
       bones: []
       spriteID: 7c8f6898f970f2910800000000000000
       internalID: 1814677556642117831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_926
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a6af6af4ec43aff0800000000000000
-      internalID: -26092626496215387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_927
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cd58569d4a3b6730800000000000000
-      internalID: 3993349599503343046
       vertices: []
       indices: 
       edges: []
@@ -23869,13 +23806,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_1023
+      name: DoorClose
       rect:
         serializedVersion: 2
         x: 80
-        y: 48
-        width: 16
-        height: 16
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -23885,27 +23822,6 @@ TextureImporter:
       bones: []
       spriteID: 956cf66c45de81100800000000000000
       internalID: 79073941841233497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_1024
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 993d6dcdd985a9250800000000000000
-      internalID: 5952167292561707929
       vertices: []
       indices: 
       edges: []
@@ -24368,48 +24284,6 @@ TextureImporter:
       bones: []
       spriteID: d720fa5c1612ccd40800000000000000
       internalID: 5605892339981550205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_1047
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d22965009cd769000800000000000000
-      internalID: 42359548754170413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Overworld_1048
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 192ced3a9e4f03170800000000000000
-      internalID: 8156288209481810577
       vertices: []
       indices: 
       edges: []
@@ -25011,7 +24885,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum EnemyState{
     idle,
     walk,
@@ -30,6 +31,10 @@ public class Enemy : MonoBehaviour
     [Header("Death Signals")]
     public SignalGame roomSignal;
 
+
+
+
+
     private void Awake()
     {
         health = maxHealth.initialValue;
@@ -47,12 +52,12 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            DeathEffect();
-            MakeLoot();
-            if (roomSignal != null)
-            {
-                roomSignal.Raise();
-            }
+                DeathEffect();
+                MakeLoot();
+                if (roomSignal != null)
+                {
+                    roomSignal.Raise();
+                }
             this.gameObject.SetActive(false);
         }
     }
