@@ -349,7 +349,6 @@ MonoBehaviour:
   maxHealth: {fileID: 11400000, guid: 8ff6786d39e5ce240b107e2e5c510c7a, type: 2}
   currentHealth: 0
   healthSignal: {fileID: 11400000, guid: b1532d3d2db707e4ea93cd23f8b2d442, type: 2}
-  playerParent: {fileID: 0}
 --- !u!1 &4832073254394988166
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +623,7 @@ MonoBehaviour:
   regularColor: {r: 0, g: 0, b: 0, a: 0}
   flashDuration: 0
   numberOfFlashes: 0
-  triggerCollider: {fileID: 0}
+  triggerCollider: {fileID: 9220729585284878945}
   mySprite: {fileID: 0}
   projectile: {fileID: 0}
   bow: {fileID: 0}

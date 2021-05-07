@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 188d352535c308a48b5acac0f06a5a9b, type: 3}
-  m_Name: HeartContainers
+  m_Name: FiveHitEnemy
   m_EditorClassIdentifier: 
-  initialValue: 3
-  RuntimeValue: 3
+  initialValue: 5
+  RuntimeValue: 5

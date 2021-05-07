@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7079467819734659058}
   - component: {fileID: 7079467819734659071}
   - component: {fileID: 7079467819734659070}
+  - component: {fileID: 5207491288283888690}
   - component: {fileID: 5626224909114099751}
   m_Layer: 8
   m_Name: Patrol Log
@@ -192,8 +193,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936aa8788228e0e4d8f106fe4076c47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 2
+  thrust: 0.5
   knockTime: 0.2
+  otherTag: Player
+--- !u!114 &5207491288283888690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079467819734659062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6055e4fdff53594aade3f1561c03f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
   otherTag: Player
 --- !u!114 &5626224909114099751
 MonoBehaviour:

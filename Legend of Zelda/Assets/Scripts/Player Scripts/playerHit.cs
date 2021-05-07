@@ -27,7 +27,8 @@ public class playerHit : MonoBehaviour
 
         if (other.CompareTag("enemy"))
         {
-			other.GetComponent<Enemy>().TakeDamage(damage);
+			if(other.GetComponent<Enemy>())
+				other.GetComponent<Enemy>().TakeDamage(damage);
         }
 	}
 }

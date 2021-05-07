@@ -59,4 +59,16 @@ public class PatrolLog : log
             currentGoal = path[currentPoint];
         }
     }
+
+   /* void OnEnable()
+    {
+        health = maxHealth.initialValue;
+        GetComponent<Animator>().SetBool("wakeUp", true);
+        currentState = EnemyState.walk;
+        mySprite.color = regularColor;
+    }
+    void OnDisable()
+    {
+        transform.position = homePosition;
+    }*/
 }

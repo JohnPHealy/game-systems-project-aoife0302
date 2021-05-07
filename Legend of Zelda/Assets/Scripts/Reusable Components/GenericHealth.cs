@@ -1,10 +1,19 @@
 using UnityEngine;
 
+/*
+ * This script is a generic health component for
+ * any item that needs to have health.  This can
+ * be added to the player, enemies, pots or grass
+ * in the scene.  It can also be extended by
+ * inheriting from it for specific interactions desired.
+ */
+
 public class GenericHealth : MonoBehaviour
 {
     public FloatValue maxHealth;
     public float currentHealth;
     private float damage;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,15 +30,15 @@ public class GenericHealth : MonoBehaviour
     public virtual void Heal(float amountToHeal)
     {
         currentHealth += amountToHeal;
-        if (currentHealth > maxHealth.intialValue)
+        if (currentHealth > maxHealth.initialValue)
         {
-            currentHealth = maxHealth.intialValue;
+            currentHealth = maxHealth.initialValue;
         }
     }
 
     public virtual void FullHeal()
     {
-        currentHealth = maxHealth.intialValue;
+        currentHealth = maxHealth.initialValue;
     }
 
     public virtual void Damage(float amountToDamage)
@@ -54,4 +63,6 @@ public class GenericHealth : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+
 }

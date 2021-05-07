@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 76346724685729711}
   - component: {fileID: 76346724685729703}
   - component: {fileID: 76346724685729710}
+  - component: {fileID: 1558454888959941725}
   m_Layer: 8
   m_Name: Area Log
   m_TagString: enemy
@@ -222,4 +223,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
+  otherTag: Player
+--- !u!114 &1558454888959941725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76346724685729702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6055e4fdff53594aade3f1561c03f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
   otherTag: Player

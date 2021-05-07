@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 188d352535c308a48b5acac0f06a5a9b, type: 3}
-  m_Name: HeartContainers
+  m_Script: {fileID: 11500000, guid: 43c095cbf30a6da4da1948dece89a25a, type: 3}
+  m_Name: HeartContainer
   m_EditorClassIdentifier: 
-  initialValue: 3
-  RuntimeValue: 3
+  itemSprite: {fileID: -4430392651179603617, guid: 4cb52525c29947e4b831549791a40b82, type: 3}
+  itemDescription: Another heart, why would I need this?
+  isKey: 0

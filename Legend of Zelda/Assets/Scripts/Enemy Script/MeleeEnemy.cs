@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class MeleeEnemy : log
 {
+    public GameObject righthit;
+    public GameObject lefthit;
+    public GameObject uphit;
+    public GameObject downhit;
     // Start is called before the first frame update
+
+
     void Start()
     {
 
@@ -42,6 +48,7 @@ public class MeleeEnemy : log
                 if (currentState == EnemyState.walk
                     && currentState != EnemyState.stagger)
                 {
+         
                     StartCoroutine(AttackCo());
                 }
              }
@@ -52,8 +59,32 @@ public class MeleeEnemy : log
     {
         currentState = EnemyState.attack;
         anim.SetBool("attack", true);
+
+        if (target.position.x - transform.position.x > 0) { 
+            righthit.SetActive(true);
+        }
+
+        if (target.position.y - transform.position.y > 0) { 
+            uphit.SetActive(true);
+        }
+
+        if (target.position.x - transform.position.x < 0) { 
+            lefthit.SetActive(true);
+        }
+
+        if (target.position.y - transform.position.y < 0) { 
+            downhit.SetActive(true);
+        }
+
         yield return new WaitForSeconds(1f);
         currentState = EnemyState.walk;
         anim.SetBool("attack", false);
+
+        lefthit.SetActive(false);
+        righthit.SetActive(false);
+        uphit.SetActive(false);
+        downhit.SetActive(false);
     }
 }
+
+
